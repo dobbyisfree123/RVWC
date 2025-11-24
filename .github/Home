@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>River Valley Wound Care | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="River Valley Wound Care in Fort Smith, AR provides advanced, patient-centered care for chronic and complex wounds." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f6f7fb;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #0ea5e9;
+      --accent-dark: #0369a1;
+      --border: #e5e7eb;
+      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.12);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-pill: 999px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; display: block; }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    /* HEADER / NAV (shared) */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-tagline {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav a { position: relative; padding: 4px 0; }
+
+    nav a:hover::after,
+    nav a:focus-visible::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 18px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 999px;
+    }
+
+    .nav-cta {
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--accent);
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+      gap: 32px;
+      padding: 32px 0 28px;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-dark);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 4vw, 2.8rem);
+      letter-spacing: -0.04em;
+      font-weight: 680;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 32rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .btn-primary {
+      background: var(--accent-dark);
+      color: white;
+      border: none;
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      font-weight: 520;
+      cursor: pointer;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover { background: #024b76; }
+
+    .btn-ghost {
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: white;
+      cursor: pointer;
+    }
+
+    .hero-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-photo {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      background: #f3f4f6;
+    }
+
+    /* SECTIONS */
+    section { padding: 32px 0 4px; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 650;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 32rem;
+    }
+
+    .staff-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .staff-card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 16px 16px 14px;
+      background: var(--bg-soft);
+    }
+
+    .staff-card h4 {
+      font-size: 0.98rem;
+      margin-bottom: 2px;
+    }
+
+    .staff-card p {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+    }
+
+    .pill {
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border);
+      padding: 9px 16px;
+      font-size: 0.9rem;
+      background: white;
+    }
+
+    .faq-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .faq-item {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      padding: 14px 16px 12px;
+      background: white;
+    }
+
+    .faq-q { font-size: 0.96rem; font-weight: 550; margin-bottom: 4px; }
+    .faq-a { font-size: 0.86rem; color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 32px;
+      padding-top: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    footer a { color: var(--accent-dark); }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: minmax(0, 1fr); }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img src="rvwc-logo.png" alt="River Valley Wound Care logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">River Valley Wound Care</div>
+          <div class="brand-tagline">Fort Smith, Arkansas</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="staff.html">Our Staff</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <div class="hero-kicker">Specialized wound care</div>
+        <h1 class="hero-title">Treating wounds from head to toe.</h1>
+        <p class="hero-subtitle">
+          River Valley Wound Care provides advanced, patient-centered treatment for chronic and complex wounds – helping you heal, stay mobile, and get back to the life you love.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="location.href='contact.html'">
+            Request an Appointment
+          </button>
+          <button class="btn-ghost" onclick="location.href='staff.html'">
+            Meet Your Care Team
+          </button>
+        </div>
+        <div class="hero-meta">
+          <span>📍 1501 South Waldron Road, Fort Smith, AR 72901</span>
+          <span>📞 (479) 395-6460</span>
+          <span>📧 appts@rivervalleywoundcare.com</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="team-hero.jpeg" alt="River Valley Wound Care team" />
+      </div>
+    </main>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">Our Staff</div>
+          <h2 class="section-title">Experienced, compassionate team</h2>
+        </div>
+        <p class="section-subtitle">
+          Board-certified wound care physician, nurse practitioner, and licensed practical nurse working together to support your healing.
+        </p>
+      </div>
+      <div class="staff-summary-grid">
+        <article class="staff-card">
+          <h4>Quyen T. Ha, M.D., CWSP</h4>
+          <p>Certified Wound Specialist Physician and founder of River Valley Wound Care.</p>
+        </article>
+        <article class="staff-card">
+          <h4>Paul W. Dobbs, APRN</h4>
+          <p>Advanced Practice Registered Nurse with a strong background in wound management.</p>
+        </article>
+        <article class="staff-card">
+          <h4>Bobbi J. Dorey, LPN</h4>
+          <p>Licensed Practical Nurse focused on wound assessment, dressings, and patient support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">Conditions We Treat</div>
+          <h2 class="section-title">Specialized care for difficult wounds</h2>
+        </div>
+      </div>
+      <div class="pill-grid">
+        <div class="pill">Diabetic foot ulcers</div>
+        <div class="pill">Venous leg ulcers</div>
+        <div class="pill">Arterial ulcers</div>
+        <div class="pill">Surgical / post-operative wounds</div>
+        <div class="pill">Pressure injuries (bedsores)</div>
+        <div class="pill">Traumatic wounds</div>
+        <div class="pill">Infected wounds</div>
+        <div class="pill">Other non-healing wounds</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">FAQ</div>
+          <h2 class="section-title">Frequently asked questions</h2>
+        </div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Do I need a referral?</div>
+          <div class="faq-a">
+            Many patients are referred by their primary care doctor or specialist, but depending on your insurance plan you may self-refer. Call our office and we’ll help you confirm what’s required.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How often will I need visits?</div>
+          <div class="faq-a">
+            Most patients are seen weekly or every other week at the start of treatment, then less often as the wound improves.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> River Valley Wound Care. All rights reserved.</div>
+      <div>For emergencies, call 911 or go to the nearest emergency department.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
