@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>River Valley Wound Care | Contact & Location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg:#ffffff; --bg-soft:#f6f7fb; --text:#111827; --muted:#6b7280;
+            --accent:#0ea5e9; --accent-dark:#0369a1; --border:#e5e7eb;
+            --radius-md:14px; --radius-lg:20px; --radius-pill:999px; }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
+    a{color:inherit;text-decoration:none;}
+    .page{max-width:1120px;margin:0 auto;padding:24px 16px 48px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+    .brand{display:flex;align-items:center;gap:12px;}
+    .brand-logo{height:60px;width:auto;}
+    .brand-text{display:flex;flex-direction:column;gap:2px;}
+    .brand-name{font-size:1rem;font-weight:650;letter-spacing:0.08em;text-transform:uppercase;}
+    .brand-tagline{font-size:0.8rem;color:var(--muted);}
+    nav{display:flex;flex-wrap:wrap;gap:16px;font-size:0.9rem;color:var(--muted);}
+    nav a{position:relative;padding:4px 0;}
+    nav a:hover::after,nav a:focus-visible::after{
+      content:"";position:absolute;left:0;bottom:-4px;width:18px;height:2px;background:var(--accent);border-radius:999px;
+    }
+    .nav-cta{padding:7px 14px;border-radius:var(--radius-pill);border:1px solid var(--accent);color:var(--accent-dark);font-size:0.85rem;font-weight:500;}
+    .nav-cta:hover{background:var(--accent);color:white;}
+    h1{font-size:1.9rem;margin:28px 0 4px;}
+    .subtitle{font-size:0.95rem;color:var(--muted);margin-bottom:24px;max-width:38rem;}
+    .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:flex-start;}
+    .card{border-radius:var(--radius-lg);border:1px solid var(--border);background:var(--bg-soft);padding:18px 20px 16px;}
+    .card h2{font-size:1.1rem;margin-bottom:6px;}
+    .line{font-size:0.9rem;color:#4b5563;margin-bottom:4px;}
+    .label{font-weight:600;}
+    .insurance span{
+      display:inline-block;margin:4px 6px 0 0;font-size:0.82rem;
+      border-radius:var(--radius-pill);border:1px solid var(--border);padding:4px 9px;background:#fff;
+    }
+    iframe{border:0;border-radius:var(--radius-lg);width:100%;height:260px;}
+    form{margin-top:14px;display:grid;gap:10px;}
+    input,textarea{
+      width:100%;padding:8px 10px;border-radius:10px;border:1px solid var(--border);font-size:0.9rem;
+    }
+    button{padding:9px 16px;border-radius:var(--radius-pill);border:none;background:var(--accent-dark);color:#fff;font-size:0.9rem;cursor:pointer;}
+    button:hover{background:#024b76;}
+    @media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr);}header{flex-direction:column;align-items:flex-start;gap:10px;}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img src="rvwc-logo.png" alt="River Valley Wound Care logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">River Valley Wound Care</div>
+          <div class="brand-tagline">Fort Smith, Arkansas</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="staff.html">Our Staff</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact & Location</h1>
+      <p class="subtitle">
+        Call, email, or send us a message and a member of our team will help you schedule an appointment or answer your questions.
+      </p>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Clinic Information</h2>
+          <p class="line"><span class="label">Address:</span> 1501 South Waldron Road, Fort Smith, AR 72901</p>
+          <p class="line"><span class="label">Phone:</span> (479) 395-6460</p>
+          <p class="line"><span class="label">Email:</span>
+            <a href="mailto:appts@rivervalleywoundcare.com">appts@rivervalleywoundcare.com</a>
+          </p>
+          <p class="line"><span class="label">Hours:</span> Mon–Thu 8:00 AM–4:00 PM · Fri 8:00 AM–12:00 PM</p>
+
+          <h2 style="margin-top:16px;">Insurances Accepted</h2>
+          <div class="insurance">
+            <span>Humana</span>
+            <span>Optum</span>
+            <span>UnitedHealthcare</span>
+            <span>Medicare</span>
+            <span>More plans coming soon</span>
+          </div>
+
+          <h2 style="margin-top:18px;">Send a Message</h2>
+          <!-- This form won't actually send without backend; it's here for layout only -->
+          <form>
+            <input type="text" placeholder="Your name" />
+            <input type="tel" placeholder="Phone number" />
+            <input type="email" placeholder="Email address" />
+            <textarea rows="3" placeholder="How can we help?"></textarea>
+            <button type="button">Submit (sample only)</button>
+          </form>
+        </section>
+
+        <section>
+          <h2 style="font-size:1.05rem;margin-bottom:8px;">Map & Directions</h2>
+          <!-- Replace src with your actual Google Maps embed once you have it -->
+          <iframe
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d">
+          </iframe>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:8px;">
+            Use the map above or your GPS app to find us on South Waldron Road in Fort Smith.
+          </p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
