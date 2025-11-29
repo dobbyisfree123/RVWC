@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>River Valley Wound Care | Fort Smith, Arkansas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f6f7fb;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #0ea5e9;
+      --accent-dark: #0369a1;
+      --border: #e5e7eb;
+      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.12);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .page { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 20px; padding-bottom: 18px; border-bottom: 1px solid var(--border);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo { height: 60px; width: auto; }
+    .brand-text { display: flex; flex-direction: column; gap: 2px; }
+    .brand-name { font-size: 1rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; }
+    .brand-tagline { font-size: 0.8rem; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.9rem; color: var(--muted); }
+    nav a { position: relative; padding: 4px 0; }
+    nav a:hover::after, nav a:focus-visible::after {
+      content:""; position:absolute; left:0; bottom:-4px; width:18px; height:2px; background:var(--accent); border-radius:999px;
+    }
+    .nav-cta { padding:7px 14px; border-radius:var(--radius-pill); border:1px solid var(--accent); color:var(--accent-dark); font-size:0.85rem; font-weight:500; }
+    .nav-cta:hover { background:var(--accent); color:white; }
+    .hero {
+      margin: 32px 0 40px;
+      text-align: center;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .hero-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--accent-dark);
+      color: white;
+      border-radius: var(--radius-pill);
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 6px 6px;
+    }
+    .hero-cta:hover { background: #024b76; }
+    .hero-cta.secondary {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent-dark);
+    }
+    .hero-cta.secondary:hover {
+      background: var(--accent);
+      color: white;
+    }
+    .section {
+      margin: 48px 0;
+    }
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+    .section .intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 42rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--bg-soft);
+      padding: 18px 20px 16px;
+    }
+    .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .card p { font-size: 0.9rem; color: #4b5563; }
+    .highlight {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+    .highlight h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .highlight p {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 16px;
+    }
+    .highlight ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 18px;
+    }
+    .highlight li {
+      font-size: 0.9rem;
+      padding: 4px 0;
+      color: #374151;
+    }
+    .highlight li::before {
+      content: "✓ ";
+      color: var(--accent-dark);
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    @media (max-width: 900px) {
+      header { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .hero h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img src="rvwc-logo.svg" alt="River Valley Wound Care logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">River Valley Wound Care</div>
+          <div class="brand-tagline">Fort Smith, Arkansas</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Staff.html">Our Staff</a>
+        <a href="Conditions.html">Conditions</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Expert Wound Care When You Need It Most</h1>
+        <p>
+          River Valley Wound Care provides specialized treatment for chronic and complex wounds that are not healing as expected. Led by Dr. Quyen T. Ha, CWSP, our team is here to support your healing journey.
+        </p>
+        <a href="Contact.html" class="hero-cta">Schedule an Appointment</a>
+        <a href="Conditions.html" class="hero-cta secondary">Conditions We Treat</a>
+      </section>
+
+      <section class="section">
+        <h2>Why Choose River Valley Wound Care?</h2>
+        <p class="intro">
+          We combine advanced medical expertise with a patient-centered approach to help wounds heal and protect your quality of life.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Board-Certified Expertise</h3>
+            <p>
+              Dr. Ha is a Certified Wound Specialist Physician (CWSP) with decades of experience treating complex wounds and preventing complications.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Personalized Treatment Plans</h3>
+            <p>
+              Every wound is different. We take time to understand your health, your goals, and your concerns before creating a care plan.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Advanced Therapies</h3>
+            <p>
+              From negative pressure therapy to cellular tissue products, we offer the latest evidence-based treatments to support healing.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Coordinated Care</h3>
+            <p>
+              We work closely with your primary care doctor, specialists, and other providers to ensure seamless, comprehensive care.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight">
+        <h2>When Should You Seek Wound Care?</h2>
+        <p>
+          Not every wound needs specialized care, but some warning signs mean it's time to see a wound specialist:
+        </p>
+        <ul>
+          <li>A wound that has not improved after 2–3 weeks of home care</li>
+          <li>Increasing pain, swelling, redness, or drainage</li>
+          <li>Signs of infection such as fever, foul odor, or pus</li>
+          <li>Wounds in people with diabetes, circulation problems, or weakened immune systems</li>
+          <li>Pressure injuries, surgical wounds that won't close, or unexplained ulcers</li>
+        </ul>
+        <p style="margin-bottom:0;">
+          If you're unsure whether you need wound care, call our office. We're here to help you decide.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Conditions We Treat</h2>
+        <p class="intro">
+          We specialize in chronic and complex wounds that require focused medical attention.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Diabetic Foot Ulcers</h3>
+            <p>Ulcers that develop on the feet due to nerve damage, poor circulation, or high blood sugar.</p>
+          </div>
+          <div class="card">
+            <h3>Venous & Arterial Ulcers</h3>
+            <p>Wounds caused by poor circulation in the veins or arteries, often on the legs or feet.</p>
+          </div>
+          <div class="card">
+            <h3>Pressure Injuries</h3>
+            <p>Also called bedsores, these occur when prolonged pressure damages skin and tissue.</p>
+          </div>
+          <div class="card">
+            <h3>Surgical Wounds</h3>
+            <p>Post-operative wounds that are not healing properly due to infection or other complications.</p>
+          </div>
+        </div>
+        <p style="margin-top:20px;text-align:center;">
+          <a href="Conditions.html" style="color:var(--accent-dark);font-weight:500;">See all conditions we treat →</a>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Meet Our Team</h2>
+        <p class="intro">
+          Our experienced clinicians bring compassion, expertise, and a commitment to helping you heal.
+        </p>
+        <div class="card" style="max-width:600px;">
+          <h3>Dr. Quyen T. Ha, M.D., CWSP</h3>
+          <p style="margin-bottom:8px;">
+            Board-certified physician and Certified Wound Specialist Physician. Founder of River Valley Wound Care and author of <em>A Runaway Teenager Who Found Freedom</em>.
+          </p>
+          <p>
+            <a href="Staff.html" style="color:var(--accent-dark);font-weight:500;">Meet the full team →</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="text-align:center;">
+        <h2>Ready to Start Healing?</h2>
+        <p class="intro" style="margin-left:auto;margin-right:auto;">
+          Call our office or send us a message to schedule your evaluation.
+        </p>
+        <a href="Contact.html" class="hero-cta">Contact Us Today</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
