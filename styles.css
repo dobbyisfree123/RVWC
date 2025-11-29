@@ -375,12 +375,14 @@ main { margin-top: 28px; }
 
 .stat-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
 .stat {
+  display: inline-block;
   padding: 12px 14px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   font-weight: 700;
   color: var(--accent-strong);
+  text-decoration: none;
 }
 
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
