@@ -193,6 +193,22 @@ nav a:hover, nav a:focus-visible {
   font-size: 1rem;
 }
 
+.team-photo-banner {
+  margin-top: 14px;
+  margin-bottom: 24px;
+  border-radius: calc(var(--radius-lg) + 6px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  background: var(--surface);
+}
+
+.team-photo-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 main { margin-top: 28px; }
 
 .hero {
