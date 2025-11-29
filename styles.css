@@ -38,6 +38,20 @@ img { max-width: 100%; display: block; }
   padding: 28px 18px 56px;
 }
 
+.text-center { text-align: center; }
+.mt-0 { margin-top: 0; }
+.mt-10 { margin-top: 10px; }
+.mt-16 { margin-top: 16px; }
+.mt-18 { margin-top: 18px; }
+.mb-8 { margin-bottom: 8px; }
+.heading-small { font-size: 1.1rem; margin-bottom: 8px; }
+.subtitle-inline { margin: 0 0 6px; }
+.inline-pill { display: inline-block; margin-top: 10px; }
+.link-accent { color: var(--accent-strong); }
+
+.button.compact { padding: 10px 18px; }
+.button.slim { padding: 10px 16px; }
+
 header {
   display: flex;
   align-items: center;
@@ -280,6 +294,8 @@ main { margin-top: 28px; }
   padding: 18px 20px 16px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
+
+.card.compact { padding: 14px 16px 10px; }
 
 .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
 .card p { color: #334155; font-size: 0.93rem; }
