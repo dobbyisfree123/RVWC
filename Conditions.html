@@ -22,10 +22,12 @@
     .brand-name { font-size:1rem; font-weight:650; letter-spacing:0.08em; text-transform:uppercase; }
     .brand-tagline { font-size:0.8rem; color:var(--muted); }
     nav { display:flex; flex-wrap:wrap; gap:16px; font-size:0.9rem; color:var(--muted); }
-    nav a { position:relative; padding:4px 0; }
-    nav a:hover::after, nav a:focus-visible::after {
-      content:""; position:absolute; left:0; bottom:-4px; width:18px; height:2px; background:var(--accent); border-radius:999px;
+    nav a { position:relative; padding:4px 0; display:inline-block; }
+    nav a::after {
+      content:""; position:absolute; left:0; right:0; bottom:-4px; height:2px; background:var(--accent); border-radius:999px;
+      transform: scaleX(0); transform-origin: left; transition: transform 0.2s ease;
     }
+    nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
     .nav-cta { padding:7px 14px; border-radius:var(--radius-pill); border:1px solid var(--accent); color:var(--accent-dark); font-size:0.85rem; font-weight:500; }
     .nav-cta:hover { background:var(--accent); color:white; }
     h1 { font-size:1.9rem; margin:28px 0 4px; }
