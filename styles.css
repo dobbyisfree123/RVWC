@@ -73,11 +73,19 @@ header {
   min-height: 110px;
 }
 
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-logo { height: 76px; width: auto; }
 .brand-text { display: flex; flex-direction: column; gap: 4px; }
 .brand-name {
-  font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -108,7 +116,7 @@ nav {
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  align-self: flex-start;
+  margin-left: auto;
 }
 
 .menu-toggle span {
@@ -574,8 +582,11 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
     align-items: stretch;
     gap: 12px;
   }
+  .header-top {
+    width: 100%;
+  }
   .brand-logo { height: 60px; }
-  .brand-name { font-size: clamp(1.15rem, 4vw, 1.35rem); }
+  .brand-name { font-size: clamp(1.35rem, 4.4vw, 1.65rem); }
   .brand-tagline { font-size: 0.9rem; }
   .menu-toggle { display: inline-flex; }
   nav {
