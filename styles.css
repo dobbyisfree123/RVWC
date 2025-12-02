@@ -616,23 +616,23 @@ main { margin-top: 28px; }
                                       linear-gradient(135deg, rgba(59, 130, 246, 0.24), rgba(52, 211, 153, 0.24)); }
 
 .photo-journey-injury {
-  background-image: linear-gradient(140deg, rgba(239, 68, 68, 0.22), rgba(249, 115, 22, 0.28)), url("1.jpg");
+  background-image: url("1.jpg");
 }
 
 .photo-journey-surgery {
-  background-image: linear-gradient(145deg, rgba(14, 165, 233, 0.2), rgba(3, 105, 161, 0.28)), url("2.jpg");
+  background-image: url("2.jpg");
 }
 
 .photo-journey-npwt {
-  background-image: linear-gradient(150deg, rgba(16, 185, 129, 0.22), rgba(5, 150, 105, 0.28)), url("3.jpg");
+  background-image: url("3.jpg");
 }
 
 .photo-journey-dressings {
-  background-image: linear-gradient(145deg, rgba(234, 179, 8, 0.22), rgba(244, 114, 182, 0.22)), url("4.jpg");
+  background-image: url("4.jpg");
 }
 
 .photo-journey-healed {
-  background-image: linear-gradient(140deg, rgba(59, 130, 246, 0.22), rgba(34, 197, 94, 0.28)), url("5.jpg");
+  background-image: url("5.jpg");
 }
 
 .case-photo.before::after { content: "Before"; }
