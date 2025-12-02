@@ -580,8 +580,10 @@ main { margin-top: 28px; }
   content: none;
 }
 
-.case-photo.before { background-image: linear-gradient(135deg, rgba(239, 68, 68, 0.22), rgba(249, 115, 22, 0.28)); }
-.case-photo.after { background-image: linear-gradient(135deg, rgba(34, 197, 94, 0.26), rgba(59, 130, 246, 0.2)); }
+.case-photo.before,
+.case-photo.after {
+  background-color: #f8fafc;
+}
 
 .photo-diabetic.before { background-image: radial-gradient(circle at 30% 30%, rgba(248, 113, 113, 0.45), transparent 48%),
                                        radial-gradient(circle at 70% 60%, rgba(251, 146, 60, 0.45), transparent 42%),
