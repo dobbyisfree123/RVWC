@@ -629,10 +629,16 @@ main { margin-top: 28px; }
 
 .photo-journey-dressings {
   background-image: url("4.jpg");
+  background-position: center 62%;
 }
 
 .photo-journey-healed {
   background-image: url("5.jpg");
+}
+
+.photo-journey-dressings::after {
+  top: auto;
+  bottom: 10px;
 }
 
 .case-photo.before::after { content: "Before"; }
