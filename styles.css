@@ -630,6 +630,16 @@ main { margin-top: 28px; }
   bottom: 10px;
 }
 
+.photo-diabetic-foot-before {
+  background-image: url("RtFt12022025 2.jpg");
+  background-position: center;
+}
+
+.photo-diabetic-foot-after {
+  background-image: url("RtFt12022025 1.jpg");
+  background-position: center;
+}
+
 .case-photo.before::after { content: "Before"; }
 .case-photo.after::after { content: "After"; }
 
