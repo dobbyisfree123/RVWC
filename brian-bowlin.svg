@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="540" viewBox="0 0 480 540" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait illustration of Dr. Brian Bowlin</title>
+  <desc id="desc">Stylized headshot with medical coat and stethoscope set on a light background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="540" fill="url(#bg)" rx="28" />
+  <circle cx="240" cy="120" r="26" fill="#bae6fd" opacity="0.7" />
+  <circle cx="360" cy="90" r="18" fill="#bfdbfe" opacity="0.7" />
+  <circle cx="120" cy="80" r="20" fill="#e0f2fe" opacity="0.7" />
+  <g transform="translate(120 110)">
+    <circle cx="120" cy="110" r="90" fill="#cbd5e1" opacity="0.32" />
+    <path d="M120 42c46 0 82 37 82 83v38c0 23-8 44-24 60s-38 24-58 24-42-8-58-24-24-37-24-60v-38c0-46 36-83 82-83Z" fill="#cbd5e1" opacity="0.35" />
+    <path d="M120 36c44 0 78 37 78 83v42c0 26-18 48-40 61l-6-32h-64l-6 32c-22-13-40-35-40-61v-42c0-46 34-83 78-83Z" fill="#f97316" opacity="0.16" />
+    <path d="M120 34c32 0 64 26 64 68v30c0 44-28 80-64 80s-64-36-64-80v-30c0-42 32-68 64-68Z" fill="#fbbf24" opacity="0.22" />
+    <path d="M120 24c36 0 64 32 64 72v24c0 40-28 72-64 72s-64-32-64-72v-24c0-40 28-72 64-72Z" fill="#7c2d12" />
+    <path d="M120 40c32 0 56 20 56 60v18c0 38-24 66-56 66s-56-28-56-66v-18c0-40 24-60 56-60Z" fill="#8b4513" />
+    <path d="M78 102c10 12 26 20 42 20s32-8 42-20c0 10-2 22-6 30-8 16-20 26-36 26s-28-10-36-26c-4-8-6-20-6-30Z" fill="#3b3024" />
+    <path d="M120 78c26 0 48 16 48 46 0 22-6 38-12 54-6 14-20 24-36 24s-30-10-36-24c-8-16-12-32-12-54 0-30 22-46 48-46Z" fill="#f3d7c1" />
+    <circle cx="92" cy="126" r="6" fill="#1f2937" />
+    <circle cx="148" cy="126" r="6" fill="#1f2937" />
+    <path d="M106 146c8 6 20 6 28 0" fill="none" stroke="#1f2937" stroke-width="4" stroke-linecap="round" />
+    <path d="M88 118c4-8 14-14 26-14" fill="none" stroke="#1f2937" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+    <path d="M152 118c-4-8-14-14-26-14" fill="none" stroke="#1f2937" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+    <path d="M86 178c22 18 46 18 68 0" fill="#1f2937" />
+    <path d="M120 220c28 0 52 10 70 26 18 16 30 38 30 62H20c0-24 12-46 30-62 18-16 42-26 70-26Z" fill="url(#coat)" />
+    <path d="M122 222c-4 30-10 60-20 88-6-6-18-8-30-8-12 0-22 4-28 10 6-20 16-38 30-52 14-14 30-24 48-28Z" fill="#e2e8f0" />
+    <path d="M120 222c4 30 10 60 20 88 6-6 18-8 30-8 12 0 22 4 28 10-6-20-16-38-30-52-14-14-30-24-48-28Z" fill="#e2e8f0" />
+    <circle cx="90" cy="310" r="30" fill="none" stroke="#334155" stroke-width="10" />
+    <circle cx="154" cy="310" r="30" fill="none" stroke="#334155" stroke-width="10" />
+    <path d="M90 280v-26c0-6 6-12 12-12h28" fill="none" stroke="#334155" stroke-width="10" stroke-linecap="round" />
+    <path d="M154 280v-26c0-6-6-12-12-12h-22" fill="none" stroke="#334155" stroke-width="10" stroke-linecap="round" />
+    <circle cx="120" cy="254" r="12" fill="#0ea5e9" />
+    <circle cx="120" cy="254" r="6" fill="#e0f2fe" />
+    <path d="M116 256h8" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <text x="50%" y="486" text-anchor="middle" font-family="'Inter', 'Segoe UI', system-ui" font-size="26" fill="#0f172a" font-weight="700">Dr. Brian Bowlin</text>
+  <text x="50%" y="516" text-anchor="middle" font-family="'Inter', 'Segoe UI', system-ui" font-size="18" fill="#334155">Wound Care Specialist, MD, CWSP</text>
+</svg>

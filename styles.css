@@ -522,6 +522,8 @@ main { margin-top: 28px; }
 .profile h2 { font-size: 1.1rem; margin-bottom: 4px; }
 .profile .title { font-size: 0.9rem; color: var(--muted); margin-bottom: 10px; }
 .profile p { font-size: 0.93rem; color: #334155; margin-bottom: 10px; }
+.profile-header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 8px; }
+.profile-photo { width: 96px; height: 96px; border-radius: 16px; border: 1px solid var(--border); object-fit: cover; background: #e2e8f0; flex-shrink: 0; }
 
 .contact-grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 20px; align-items: start; }
 
