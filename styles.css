@@ -632,6 +632,56 @@ main { margin-top: 28px; }
   bottom: 10px;
 }
 
+.photo-dfu1-assessment {
+  background-image: url("RtFt12022025 2.jpg");
+  background-position: center;
+}
+
+.photo-dfu1-debridement {
+  background-image: url("2.jpg");
+  background-position: center 60%;
+}
+
+.photo-dfu1-npwt {
+  background-image: url("3.jpg");
+  background-position: center;
+}
+
+.photo-dfu1-dressings {
+  background-image: url("4.jpg");
+  background-position: center 62%;
+}
+
+.photo-dfu1-healed {
+  background-image: url("RtFt12022025 1.jpg");
+  background-position: center;
+}
+
+.photo-dfu2-assessment {
+  background-image: url("1.jpg");
+  background-position: center;
+}
+
+.photo-dfu2-infection {
+  background-image: url("4.jpg");
+  background-position: center 60%;
+}
+
+.photo-dfu2-offloading {
+  background-image: url("RtFt12022025 2.jpg");
+  background-position: center;
+}
+
+.photo-dfu2-granulation {
+  background-image: url("3.jpg");
+  background-position: center;
+}
+
+.photo-dfu2-healed {
+  background-image: url("5.jpg");
+  background-position: center;
+}
+
 .photo-diabetic-foot-before {
   background-image: url("https://github.com/dobbyisfree123/RVWC/blob/main/RtFt12022025%202.jpg");
   background-position: center;
