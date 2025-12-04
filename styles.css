@@ -684,12 +684,16 @@ main { margin-top: 28px; }
 
 .photo-diabetic-foot-before {
   background-image: url("diabetic-foot-before.jpg");
-  background-position: center;
+  background-position: center 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-diabetic-foot-after {
   background-image: url("diabetic-foot-after.jpg");
-  background-position: center;
+  background-position: center 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .case-photo.before::after { content: "Before"; }
