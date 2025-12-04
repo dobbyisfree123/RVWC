@@ -633,28 +633,38 @@ main { margin-top: 28px; }
 }
 
 .photo-dfu1-assessment {
-  background-image: url("RtFt12022025 2.jpg");
-  background-position: center;
+  background-image: url("diabetic-foot-before.jpg");
+  background-position: center 45%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu1-debridement {
-  background-image: url("2.jpg");
-  background-position: center 60%;
+  background-image: url("diabetic-foot-before.jpg");
+  background-position: center 45%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu1-npwt {
-  background-image: url("3.jpg");
-  background-position: center;
+  background-image: url("diabetic-foot-before.jpg");
+  background-position: center 45%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu1-dressings {
-  background-image: url("4.jpg");
-  background-position: center 62%;
+  background-image: url("diabetic-foot-after.jpg");
+  background-position: center 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu1-healed {
-  background-image: url("RtFt12022025 1.jpg");
-  background-position: center;
+  background-image: url("diabetic-foot-after.jpg");
+  background-position: center 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu2-assessment {
