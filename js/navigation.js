@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!headerContainer) return;
 
-  fetch('navigation.html')
+  fetch('components/navigation.html')
     .then((response) => response.text())
     .then((markup) => {
       headerContainer.innerHTML = markup;
