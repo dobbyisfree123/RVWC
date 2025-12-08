@@ -7,7 +7,7 @@
       "description": "From the moment of injury through advanced therapy and follow-up, this single case shows how coordinated treatment closes a complex wound and restores skin integrity.",
       "patientConsent": true,
       "duration": {
-        "weeks": 16,
+        "weeks": 10,
         "startDate": null,
         "endDate": null
       },
@@ -74,18 +74,18 @@
         },
         {
           "stage": 5,
-          "week": 16,
-          "label": "After sixteen weeks of therapy",
+          "week": 10,
+          "label": "After ten weeks of therapy",
           "type": "after",
           "images": [
             {
               "path": "images/wounds/5.jpg",
-              "alt": "Sixteen weeks after therapy",
-              "caption": "Week 16: Intact skin with durable scar tissue and full protection."
+              "alt": "Ten weeks after therapy",
+              "caption": "Week 10: Intact skin with durable scar tissue and full protection."
             }
           ],
           "treatment": "Completed therapy",
-          "observations": "Intact skin, durable scar tissue, full protection restored"
+          "observations": "At week 10, skin integrity restored with durable scar tissue"
         }
       ]
     },
