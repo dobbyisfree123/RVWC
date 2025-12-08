@@ -1025,6 +1025,13 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
   overflow: hidden;
 }
 
+.ba-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .ba-photo::after {
   content: attr(data-label);
   position: absolute;
@@ -1039,17 +1046,7 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
   letter-spacing: 0.02em;
 }
 
-.ba-photo.before {
-  background: #fee2e2;
-}
 
-.ba-photo.progress {
-  background: #e0f2fe;
-}
-
-.ba-photo.after {
-  background: #dcfce7;
-}
 
 .ba-checklist {
   list-style: none;
