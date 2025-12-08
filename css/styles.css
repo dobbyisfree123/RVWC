@@ -1020,8 +1020,7 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
   position: relative;
   border-radius: 16px;
   min-height: 170px;
-  background: radial-gradient(circle at 30% 30%, rgba(14, 165, 233, 0.2), transparent 50%),
-              linear-gradient(135deg, rgba(14, 165, 233, 0.16), rgba(8, 47, 73, 0.12));
+  background: #f5f7fb;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
   overflow: hidden;
 }
@@ -1041,18 +1040,15 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
 }
 
 .ba-photo.before {
-  background: radial-gradient(circle at 26% 30%, rgba(248, 113, 113, 0.26), transparent 48%),
-              linear-gradient(135deg, rgba(248, 113, 113, 0.25), rgba(248, 180, 82, 0.2));
+  background: #fee2e2;
 }
 
 .ba-photo.progress {
-  background: radial-gradient(circle at 24% 36%, rgba(14, 165, 233, 0.22), transparent 48%),
-              linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(52, 211, 153, 0.18));
+  background: #e0f2fe;
 }
 
 .ba-photo.after {
-  background: radial-gradient(circle at 30% 40%, rgba(74, 222, 128, 0.26), transparent 46%),
-              linear-gradient(135deg, rgba(74, 222, 128, 0.25), rgba(34, 197, 94, 0.2));
+  background: #dcfce7;
 }
 
 .ba-checklist {
