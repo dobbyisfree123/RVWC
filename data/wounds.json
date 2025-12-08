@@ -142,14 +142,7 @@
           "week": 4,
           "label": "Week 4",
           "type": "during",
-          "images": [
-            {
-              "path": "images/wounds/diabetic-foot-before.jpg",
-              "alt": "Negative pressure dressing",
-              "caption": "Week 4: Negative pressure therapy encouraged granulation and edema control.",
-              "cssClass": "photo-dfu1-npwt"
-            }
-          ],
+          "images": [],
           "treatment": "Negative pressure therapy",
           "observations": "Granulation encouraged, edema controlled"
         },
