@@ -634,30 +634,27 @@ main { margin-top: 28px; }
 
 .photo-dfu1-assessment {
   background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 45%;
+  background-position: center 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .photo-dfu1-debridement {
-  background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 45%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../images/wounds/1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu1-npwt {
-  background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 45%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../images/wounds/2.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu1-dressings {
-  background-image: url("../images/wounds/diabetic-foot-after.jpg");
-  background-position: center 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../images/wounds/3.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu1-healed {
@@ -668,28 +665,35 @@ main { margin-top: 28px; }
 }
 
 .photo-dfu2-assessment {
-  background-image: url("../images/wounds/1.jpg");
+  background-image: url("../images/wounds/4.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu2-infection {
-  background-image: url("../images/wounds/4.jpg");
-  background-position: center 60%;
+  background-image: url("../images/wounds/5.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu2-offloading {
-  background-image: url("RtFt12022025 2.jpg");
-  background-position: center;
+  background-image: url("../images/wounds/diabetic-foot-before.jpg");
+  background-position: center 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-dfu2-granulation {
-  background-image: url("../images/wounds/3.jpg");
+  background-image: url("../images/wounds/2.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu2-healed {
-  background-image: url("../images/wounds/5.jpg");
-  background-position: center;
+  background-image: url("../images/wounds/diabetic-foot-after.jpg");
+  background-position: center 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .photo-diabetic-foot-before {
