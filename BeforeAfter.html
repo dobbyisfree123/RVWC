@@ -2,170 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>River Valley Wound Care | Before & After Wound Photos</title>
+  <title>River Valley Wound Care | Before & After Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="See before and after wound care photos from River Valley Wound Care showing real healing progress for complex wounds."
+    content="See how River Valley Wound Care guides wounds from initial assessment through full healing with specialized before and after examples."
   />
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="js/navigation.js"></script>
 </head>
 <body>
-  <div class="page">
+  <div class="page before-after-page">
     <div id="site-header"></div>
 
     <main>
-      <section class="hero before-after-hero">
-        <div class="hero-content">
-          <div class="eyebrow">Healing progress</div>
-          <h1>Before and after wound photos</h1>
-          <p>
-            Real patients, real healing. These photos highlight how specialized wound care, consistent follow-up, and patient
-            education help complex wounds close safely over time.
+      <section class="ba-hero">
+        <div class="ba-hero__content">
+          <p class="eyebrow">Before & After results</p>
+          <h1>Clear examples of wound healing you can trust</h1>
+          <p class="ba-hero__intro">
+            Every wound is unique, but a guided plan makes the difference. Explore how our team pairs surgical support,
+            infection control, and meticulous dressing changes to protect function while closing complex wounds.
           </p>
-          <div class="badge-row">
-            <span class="pill">Real patient cases with consent</span>
-            <span class="pill">Protection of function and mobility</span>
+          <div class="ba-hero__highlights">
+            <div class="stat-chip">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Physician oversight</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-number">2k+</span>
+              <span class="stat-label">Wounds treated</span>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-number">Integrated</span>
+              <span class="stat-label">Surgical & medical care</span>
+            </div>
           </div>
           <div class="hero-actions">
-            <a href="Contact.html" class="button primary">Schedule a visit</a>
-            <a href="Conditions.html" class="button secondary">Conditions we treat</a>
+            <a href="Contact.html" class="button primary">Request a consult</a>
+            <a href="FAQ.html" class="button secondary">What to expect</a>
           </div>
         </div>
-        <div class="before-after-hero-visual" aria-hidden="true">
-          <div class="photo-stack">
-            <div class="photo-chip before">Before</div>
-            <div class="photo-chip after">After</div>
-            <div class="photo-chip detail">16 weeks of care</div>
+        <div class="ba-hero__visual" aria-hidden="true">
+          <div class="ba-frame ba-frame--hero">
+            <div class="ba-photo before" data-label="Before" aria-hidden="true"></div>
+            <div class="ba-photo after" data-label="After" aria-hidden="true"></div>
           </div>
+          <p class="ba-hero__caption">Real patient photos displayed with consent. Results vary based on circulation, pressure relief, and overall health.</p>
         </div>
       </section>
 
-      <section class="section">
-        <header>
-          <div class="eyebrow">Patient stories</div>
-          <h2>See how dedicated wound care changes the outcome</h2>
-          <p class="intro">
-            Follow one complex wound from the first injury through full healing. Milestones show how surgical support,
-            negative pressure, and advanced dressings create durable closure over time.
-          </p>
+      <section class="section ba-cases">
+        <header class="section-header">
+          <div>
+            <p class="eyebrow">Featured healing stories</p>
+            <h2>Progress you can measure from visit to visit</h2>
+            <p class="intro">
+              Each case highlights the pairing of surgical debridement, negative pressure therapy, and protective dressings
+              with close follow-up. Swipe through to see where we started and where patients finished.
+            </p>
+          </div>
+          <div class="badge-row">
+            <span class="pill">Diabetic foot ulcers</span>
+            <span class="pill">Traumatic wounds</span>
+            <span class="pill">Surgical complications</span>
+          </div>
         </header>
 
-        <div class="before-after-grid">
-          <article class="case-card">
-            <div class="case-text">
-              <div class="eyebrow">Comprehensive wound journey</div>
-              <h3>One case, five pivotal milestones</h3>
+        <div class="ba-case-grid">
+          <article class="ba-card">
+            <header class="ba-card__header">
+              <p class="eyebrow">Diabetic foot ulcer</p>
+              <h3>Offloading and infection control</h3>
               <p>
-                From the moment of injury through advanced therapy and follow-up, this single case shows how coordinated
-                treatment closes a complex wound and restores skin integrity.
+                Weekly sharp debridement, antibiotic coverage, and total contact casting allowed the wound to fill with
+                healthy tissue while protecting the plantar surface from pressure and shear.
               </p>
+            </header>
+            <div class="ba-frame">
+              <div class="ba-photo before" data-label="Week 0"></div>
+              <div class="ba-photo progress" data-label="Week 4"></div>
+              <div class="ba-photo after" data-label="Week 12"></div>
             </div>
-            <div class="case-timeline">
-              <figure>
-                <div class="case-photo photo-journey-injury" role="img" aria-label="Post injury wound" data-label="Post Injury"></div>
-                <figcaption>Initial injury with hematoma.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-journey-surgery" role="img" aria-label="Post surgery wound" data-label="Post Surgery"></div>
-                <figcaption>Post surgical debridement with evacuation of hematoma exposed healthy tissue.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-journey-npwt" role="img" aria-label="Negative pressure wound therapy" data-label="Negative Pressure Wound Therapy"></div>
-                <figcaption>Negative pressure dressing promoted granulation and reduced edema.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-journey-dressings" role="img" aria-label="Advanced dressing care" data-label="After weekly application of advanced dressings"></div>
-                <figcaption>Weekly advanced dressings maintained moisture balance for rapid fill-in.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-journey-healed" role="img" aria-label="Sixteen weeks after therapy" data-label="After sixteen weeks of therapy"></div>
-                <figcaption>Week 16: Intact skin with durable scar tissue and full protection.</figcaption>
-              </figure>
-            </div>
+            <ul class="ba-checklist">
+              <li>Callus removal and staged debridement removed devitalized tissue.</li>
+              <li>Offloading boot plus weekly NPWT supported granulation.</li>
+              <li>Transitioned to collagen-silver dressings for closure.</li>
+            </ul>
           </article>
 
-          <article class="case-card">
-            <div class="case-text">
-              <div class="eyebrow">Diabetic foot ulcer</div>
-              <h3>Offloading plus NPWT closed a plantar ulcer</h3>
+          <article class="ba-card">
+            <header class="ba-card__header">
+              <p class="eyebrow">Traumatic calf wound</p>
+              <h3>Surgical partnership for rapid recovery</h3>
               <p>
-                A patient with neuropathy presented with a deep plantar ulcer. Surgical debridement, offloading with total contact casting,
-                and weekly advanced dressings reduced infection risk and supported granulation until the wound filled in.
+                Collaboration between our wound specialists and surgeons allowed early evacuation of hematoma, layered
+                closure, and vigilant follow-up to protect mobility.
               </p>
+            </header>
+            <div class="ba-frame">
+              <div class="ba-photo before" data-label="Post-injury"></div>
+              <div class="ba-photo progress" data-label="Post-op"></div>
+              <div class="ba-photo after" data-label="Week 10"></div>
             </div>
-            <div class="case-timeline">
-              <figure>
-                <div class="case-photo photo-dfu1-assessment" role="img" aria-label="Initial plantar ulcer" data-label="Week 0"></div>
-                <figcaption>Week 0: Deep plantar ulcer with slough.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu1-debridement" role="img" aria-label="Post debridement" data-label="Week 2"></div>
-                <figcaption>Week 2: Sharp debridement removed non-viable tissue and reduced bioburden.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu1-npwt" role="img" aria-label="Negative pressure dressing" data-label="Week 4"></div>
-                <figcaption>Week 4: Negative pressure therapy encouraged granulation and edema control.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu1-dressings" role="img" aria-label="Advanced dressings" data-label="Week 8"></div>
-                <figcaption>Week 8: Collagen and silver dressings maintained a clean, moist bed.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu1-healed" role="img" aria-label="Healed plantar wound" data-label="Week 14"></div>
-                <figcaption>Week 14: Wound fully epithelialized with durable scar tissue.</figcaption>
-              </figure>
-            </div>
+            <ul class="ba-checklist">
+              <li>Operative debridement removed non-viable tissue and reduced swelling.</li>
+              <li>Negative pressure therapy maintained a clean, moist environment.</li>
+              <li>Scar management and mobility coaching at discharge.</li>
+            </ul>
           </article>
 
-          <article class="case-card">
-            <div class="case-text">
-              <div class="eyebrow">Diabetic foot ulcer</div>
-              <h3>Infection control and pressure relief</h3>
+          <article class="ba-card">
+            <header class="ba-card__header">
+              <p class="eyebrow">Surgical site dehiscence</p>
+              <h3>Rebuilding skin integrity</h3>
               <p>
-                Another neuropathic patient developed a midfoot ulcer with surrounding cellulitis. Aggressive infection
-                control, strict offloading, and layered dressings transitioned the wound from contaminated to closed.
+                A patient developed gapping along a previous incision. Layered dressings, nutritional counseling, and strict
+                follow-up prevented infection and supported steady closure.
               </p>
+            </header>
+            <div class="ba-frame">
+              <div class="ba-photo before" data-label="Initial gap"></div>
+              <div class="ba-photo progress" data-label="Granulation"></div>
+              <div class="ba-photo after" data-label="Healed"></div>
             </div>
-            <div class="case-timeline">
-              <figure>
-                <div class="case-photo photo-dfu2-assessment" role="img" aria-label="Superficial plantar lesion" data-label="Week 0"></div>
-                <figcaption>Week 0: Small plantar lesion with callus and superficial breakdown.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu2-infection" role="img" aria-label="Infected plantar ulcer" data-label="Week 3"></div>
-                <figcaption>Week 3: Infection and undermining treated with debridement and antibiotics.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu2-offloading" role="img" aria-label="Offloading and dressing" data-label="Week 6"></div>
-                <figcaption>Week 6: Offloading boot plus moisture-balancing dressings reduced pressure and shear.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu2-granulation" role="img" aria-label="Granulation tissue" data-label="Week 10"></div>
-                <figcaption>Week 10: Healthy granulation filled the defect with minimal exudate.</figcaption>
-              </figure>
-              <figure>
-                <div class="case-photo photo-dfu2-healed" role="img" aria-label="Closed ulcer" data-label="Week 16"></div>
-                <figcaption>Week 16: Skin intact with protective scar and continued offloading plan.</figcaption>
-              </figure>
-            </div>
+            <ul class="ba-checklist">
+              <li>Bioburden control with silver dressings and moisture balance.</li>
+              <li>Offloading of the incision line with reinforced support.</li>
+              <li>Weekly evaluation until durable scar formed.</li>
+            </ul>
           </article>
-
         </div>
       </section>
 
-      <section class="section callout">
-        <div class="summary-box">
-          <div class="eyebrow">What to expect</div>
-          <h3>Results are individualized</h3>
-          <p>
-            Wound healing depends on circulation, pressure relief, blood sugar control, and nutrition. Our team will guide you
-            through each step with clear instructions and follow-up.
-          </p>
-          <div class="hero-actions">
-            <a href="Contact.html" class="button primary">Start your healing plan</a>
-            <a href="FAQ.html" class="button secondary">View patient FAQs</a>
+      <section class="section ba-journey">
+        <div class="ba-journey__content">
+          <div>
+            <p class="eyebrow">Your wound care roadmap</p>
+            <h2>We rebuild confidence by rebuilding tissue</h2>
+            <p>
+              Our multidisciplinary team guides you through each stage—stabilization, treatment, and protection—so you know
+              exactly what is happening and why.
+            </p>
+            <div class="hero-actions">
+              <a href="Contact.html" class="button primary">Schedule a visit</a>
+              <a href="Conditions.html" class="button secondary">See conditions we treat</a>
+            </div>
+          </div>
+          <ol class="ba-steps">
+            <li>
+              <h4>Immediate assessment</h4>
+              <p>We document wound dimensions, circulation, and infection risk to build a targeted plan.</p>
+            </li>
+            <li>
+              <h4>Advanced therapies</h4>
+              <p>Debridement, negative pressure, and specialty dressings are tailored to support healthy tissue.</p>
+            </li>
+            <li>
+              <h4>Protection and follow-up</h4>
+              <p>Offloading, glucose control, and home-care education keep healing on track between visits.</p>
+            </li>
+            <li>
+              <h4>Durable closure</h4>
+              <p>Scar care and mobility training help prevent recurrence and protect your long-term function.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section ba-cta">
+        <div class="ba-cta__panel">
+          <div>
+            <p class="eyebrow">Ready for a plan?</p>
+            <h2>Bring photos or let us document progress</h2>
+            <p>
+              Whether you arrive with your own photos or we capture them at the clinic, we track changes with every visit.
+              That record helps us adjust treatment quickly and share updates with your entire care team.
+            </p>
+          </div>
+          <div class="ba-cta__actions">
+            <a href="Contact.html" class="button primary">Request an appointment</a>
+            <a href="Staff.html" class="button secondary">Meet the team</a>
           </div>
         </div>
       </section>
