@@ -607,24 +607,34 @@ main { margin-top: 28px; }
                                       linear-gradient(135deg, rgba(59, 130, 246, 0.24), rgba(52, 211, 153, 0.24)); }
 
 .photo-journey-injury {
-  background-image: url("../images/wounds/1.jpg");
+  background-image: radial-gradient(circle at 30% 30%, rgba(248, 113, 113, 0.48), transparent 52%),
+    radial-gradient(circle at 68% 62%, rgba(251, 146, 60, 0.42), transparent 44%),
+    linear-gradient(135deg, rgba(239, 68, 68, 0.18), rgba(251, 191, 36, 0.22));
 }
 
 .photo-journey-surgery {
-  background-image: url("../images/wounds/2.jpg");
+  background-image: radial-gradient(circle at 30% 28%, rgba(59, 130, 246, 0.42), transparent 52%),
+    radial-gradient(circle at 72% 60%, rgba(14, 165, 233, 0.38), transparent 44%),
+    linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(125, 211, 252, 0.2));
 }
 
 .photo-journey-npwt {
-  background-image: url("../images/wounds/3.jpg");
+  background-image: radial-gradient(circle at 32% 32%, rgba(52, 211, 153, 0.46), transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(16, 185, 129, 0.36), transparent 44%),
+    linear-gradient(135deg, rgba(34, 197, 94, 0.22), rgba(59, 130, 246, 0.18));
 }
 
 .photo-journey-dressings {
-  background-image: url("../images/wounds/4.jpg");
-  background-position: center 62%;
+  background-image: radial-gradient(circle at 30% 28%, rgba(248, 113, 113, 0.36), transparent 50%),
+    radial-gradient(circle at 72% 60%, rgba(251, 146, 60, 0.32), transparent 44%),
+    linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.16));
+  background-position: center;
 }
 
 .photo-journey-healed {
-  background-image: url("../images/wounds/5.jpg");
+  background-image: radial-gradient(circle at 30% 34%, rgba(34, 197, 94, 0.45), transparent 48%),
+    radial-gradient(circle at 72% 62%, rgba(52, 211, 153, 0.36), transparent 42%),
+    linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.16));
 }
 
 .photo-journey-dressings::after {
@@ -633,81 +643,99 @@ main { margin-top: 28px; }
 }
 
 .photo-dfu1-assessment {
-  background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 30%, rgba(59, 130, 246, 0.36), transparent 54%),
+    radial-gradient(circle at 72% 64%, rgba(14, 165, 233, 0.34), transparent 46%),
+    linear-gradient(145deg, rgba(59, 130, 246, 0.2), rgba(125, 211, 252, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu1-debridement {
-  background-image: url("../images/wounds/1.jpg");
+  background-image: radial-gradient(circle at 30% 34%, rgba(248, 113, 113, 0.36), transparent 52%),
+    radial-gradient(circle at 70% 66%, rgba(251, 146, 60, 0.34), transparent 44%),
+    linear-gradient(135deg, rgba(239, 68, 68, 0.18), rgba(249, 115, 22, 0.18));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu1-npwt {
-  background-image: url("../images/wounds/2.jpg");
+  background-image: radial-gradient(circle at 30% 30%, rgba(52, 211, 153, 0.4), transparent 54%),
+    radial-gradient(circle at 70% 66%, rgba(16, 185, 129, 0.32), transparent 46%),
+    linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(59, 130, 246, 0.16));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu1-dressings {
-  background-image: url("../images/wounds/3.jpg");
+  background-image: radial-gradient(circle at 32% 32%, rgba(245, 158, 11, 0.34), transparent 50%),
+    radial-gradient(circle at 70% 64%, rgba(251, 191, 36, 0.32), transparent 44%),
+    linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(59, 130, 246, 0.14));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu1-healed {
-  background-image: url("../images/wounds/diabetic-foot-after.jpg");
-  background-position: center 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 34%, rgba(34, 197, 94, 0.44), transparent 52%),
+    radial-gradient(circle at 70% 64%, rgba(52, 211, 153, 0.34), transparent 46%),
+    linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu2-assessment {
-  background-image: url("../images/wounds/4.jpg");
+  background-image: radial-gradient(circle at 32% 30%, rgba(59, 130, 246, 0.36), transparent 54%),
+    radial-gradient(circle at 70% 64%, rgba(14, 165, 233, 0.32), transparent 46%),
+    linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(14, 165, 233, 0.16));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu2-infection {
-  background-image: url("../images/wounds/5.jpg");
+  background-image: radial-gradient(circle at 30% 32%, rgba(248, 113, 113, 0.36), transparent 50%),
+    radial-gradient(circle at 72% 64%, rgba(239, 68, 68, 0.34), transparent 44%),
+    linear-gradient(135deg, rgba(248, 113, 113, 0.18), rgba(251, 146, 60, 0.16));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu2-offloading {
-  background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 30%, rgba(251, 191, 36, 0.34), transparent 52%),
+    radial-gradient(circle at 70% 64%, rgba(248, 180, 0, 0.32), transparent 44%),
+    linear-gradient(145deg, rgba(244, 114, 182, 0.18), rgba(251, 191, 36, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-dfu2-granulation {
-  background-image: url("../images/wounds/2.jpg");
+  background-image: radial-gradient(circle at 32% 32%, rgba(52, 211, 153, 0.4), transparent 52%),
+    radial-gradient(circle at 70% 66%, rgba(16, 185, 129, 0.34), transparent 46%),
+    linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(59, 130, 246, 0.16));
   background-position: center;
   background-size: cover;
 }
 
 .photo-dfu2-healed {
-  background-image: url("../images/wounds/diabetic-foot-after.jpg");
-  background-position: center 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 34%, rgba(34, 197, 94, 0.44), transparent 52%),
+    radial-gradient(circle at 70% 62%, rgba(52, 211, 153, 0.32), transparent 46%),
+    linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-diabetic-foot-before {
-  background-image: url("../images/wounds/diabetic-foot-before.jpg");
-  background-position: center 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 30%, rgba(59, 130, 246, 0.36), transparent 54%),
+    radial-gradient(circle at 70% 64%, rgba(14, 165, 233, 0.34), transparent 46%),
+    linear-gradient(145deg, rgba(59, 130, 246, 0.2), rgba(125, 211, 252, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-diabetic-foot-after {
-  background-image: url("../images/wounds/diabetic-foot-after.jpg");
-  background-position: center 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 32% 34%, rgba(34, 197, 94, 0.44), transparent 52%),
+    radial-gradient(circle at 70% 62%, rgba(52, 211, 153, 0.32), transparent 46%),
+    linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.16));
+  background-position: center;
+  background-size: cover;
 }
 
 .case-photo.before::after { content: "Before"; }
