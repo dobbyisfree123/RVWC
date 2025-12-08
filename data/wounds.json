@@ -1,0 +1,296 @@
+{
+  "woundCases": [
+    {
+      "id": "comprehensive-wound-journey",
+      "category": "Comprehensive Wound Journey",
+      "title": "One case, five pivotal milestones",
+      "description": "From the moment of injury through advanced therapy and follow-up, this single case shows how coordinated treatment closes a complex wound and restores skin integrity.",
+      "patientConsent": true,
+      "duration": {
+        "weeks": 16,
+        "startDate": null,
+        "endDate": null
+      },
+      "timeline": [
+        {
+          "stage": 1,
+          "week": 0,
+          "label": "Post Injury",
+          "type": "before",
+          "images": [
+            {
+              "path": "images/wounds/1.jpg",
+              "alt": "Post injury wound",
+              "caption": "Initial injury with hematoma."
+            }
+          ],
+          "treatment": "Initial assessment",
+          "observations": "Hematoma present at injury site"
+        },
+        {
+          "stage": 2,
+          "week": 1,
+          "label": "Post Surgery",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/2.jpg",
+              "alt": "Post surgery wound",
+              "caption": "Post surgical debridement with evacuation of hematoma exposed healthy tissue."
+            }
+          ],
+          "treatment": "Surgical debridement with hematoma evacuation",
+          "observations": "Healthy tissue exposed after debridement"
+        },
+        {
+          "stage": 3,
+          "week": 4,
+          "label": "Negative Pressure Wound Therapy",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/3.jpg",
+              "alt": "Negative pressure wound therapy",
+              "caption": "Negative pressure dressing promoted granulation and reduced edema."
+            }
+          ],
+          "treatment": "Negative pressure wound therapy (NPWT)",
+          "observations": "Granulation promoted, edema reduced"
+        },
+        {
+          "stage": 4,
+          "week": 8,
+          "label": "After weekly application of advanced dressings",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/4.jpg",
+              "alt": "Advanced dressing care",
+              "caption": "Weekly advanced dressings maintained moisture balance for rapid fill-in."
+            }
+          ],
+          "treatment": "Weekly advanced dressings",
+          "observations": "Moisture balance maintained, rapid fill-in progress"
+        },
+        {
+          "stage": 5,
+          "week": 16,
+          "label": "After sixteen weeks of therapy",
+          "type": "after",
+          "images": [
+            {
+              "path": "images/wounds/5.jpg",
+              "alt": "Sixteen weeks after therapy",
+              "caption": "Week 16: Intact skin with durable scar tissue and full protection."
+            }
+          ],
+          "treatment": "Completed therapy",
+          "observations": "Intact skin, durable scar tissue, full protection restored"
+        }
+      ]
+    },
+    {
+      "id": "diabetic-foot-ulcer-1",
+      "category": "Diabetic Foot Ulcer",
+      "title": "Offloading plus NPWT closed a plantar ulcer",
+      "description": "A patient with neuropathy presented with a deep plantar ulcer. Surgical debridement, negative pressure, and weekly advanced dressings reduced infection risk and supported granulation until the wound filled in.",
+      "patientConsent": true,
+      "patientConditions": [
+        "Diabetes",
+        "Neuropathy"
+      ],
+      "duration": {
+        "weeks": 14,
+        "startDate": null,
+        "endDate": null
+      },
+      "timeline": [
+        {
+          "stage": 1,
+          "week": 0,
+          "label": "Week 0",
+          "type": "before",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-before.jpg",
+              "alt": "Initial plantar ulcer",
+              "caption": "Week 0: Deep plantar ulcer with slough.",
+              "cssClass": "photo-dfu1-assessment"
+            }
+          ],
+          "treatment": "Initial assessment",
+          "observations": "Deep plantar ulcer with slough present"
+        },
+        {
+          "stage": 2,
+          "week": 2,
+          "label": "Week 2",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-before.jpg",
+              "alt": "Post debridement",
+              "caption": "Week 2: Sharp debridement removed non-viable tissue and reduced bioburden.",
+              "cssClass": "photo-dfu1-debridement"
+            }
+          ],
+          "treatment": "Sharp debridement",
+          "observations": "Non-viable tissue removed, bioburden reduced"
+        },
+        {
+          "stage": 3,
+          "week": 4,
+          "label": "Week 4",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-before.jpg",
+              "alt": "Negative pressure dressing",
+              "caption": "Week 4: Negative pressure therapy encouraged granulation and edema control.",
+              "cssClass": "photo-dfu1-npwt"
+            }
+          ],
+          "treatment": "Negative pressure therapy",
+          "observations": "Granulation encouraged, edema controlled"
+        },
+        {
+          "stage": 4,
+          "week": 8,
+          "label": "Week 8",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-after.jpg",
+              "alt": "Advanced dressings",
+              "caption": "Week 8: Collagen and silver dressings maintained a clean, moist bed.",
+              "cssClass": "photo-dfu1-dressings"
+            }
+          ],
+          "treatment": "Collagen and silver dressings",
+          "observations": "Clean, moist wound bed maintained"
+        },
+        {
+          "stage": 5,
+          "week": 14,
+          "label": "Week 14",
+          "type": "after",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-after.jpg",
+              "alt": "Healed plantar wound",
+              "caption": "Week 14: Wound fully epithelialized with durable scar tissue.",
+              "cssClass": "photo-dfu1-healed"
+            }
+          ],
+          "treatment": "Completed therapy",
+          "observations": "Fully epithelialized with durable scar tissue"
+        }
+      ]
+    },
+    {
+      "id": "diabetic-foot-ulcer-2",
+      "category": "Diabetic Foot Ulcer",
+      "title": "Infection control and pressure relief",
+      "description": "Another neuropathic patient developed a midfoot ulcer with surrounding cellulitis. Aggressive infection control, strict offloading, and layered dressings transitioned the wound from contaminated to closed.",
+      "patientConsent": true,
+      "patientConditions": [
+        "Diabetes",
+        "Neuropathy",
+        "Cellulitis"
+      ],
+      "duration": {
+        "weeks": 16,
+        "startDate": null,
+        "endDate": null
+      },
+      "timeline": [
+        {
+          "stage": 1,
+          "week": 0,
+          "label": "Week 0",
+          "type": "before",
+          "images": [
+            {
+              "path": "images/wounds/1.jpg",
+              "alt": "Superficial plantar lesion",
+              "caption": "Week 0: Small plantar lesion with callus and superficial breakdown.",
+              "cssClass": "photo-dfu2-assessment"
+            }
+          ],
+          "treatment": "Initial assessment",
+          "observations": "Small plantar lesion with callus and superficial breakdown"
+        },
+        {
+          "stage": 2,
+          "week": 3,
+          "label": "Week 3",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/4.jpg",
+              "alt": "Infected plantar ulcer",
+              "caption": "Week 3: Infection and undermining treated with debridement and antibiotics.",
+              "cssClass": "photo-dfu2-infection"
+            }
+          ],
+          "treatment": "Debridement and antibiotics",
+          "observations": "Infection and undermining present"
+        },
+        {
+          "stage": 3,
+          "week": 6,
+          "label": "Week 6",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/diabetic-foot-before.jpg",
+              "alt": "Offloading and dressing",
+              "caption": "Week 6: Offloading boot plus moisture-balancing dressings reduced pressure and shear.",
+              "cssClass": "photo-dfu2-offloading"
+            }
+          ],
+          "treatment": "Offloading boot with moisture-balancing dressings",
+          "observations": "Pressure and shear reduced"
+        },
+        {
+          "stage": 4,
+          "week": 10,
+          "label": "Week 10",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/3.jpg",
+              "alt": "Granulation tissue",
+              "caption": "Week 10: Healthy granulation filled the defect with minimal exudate.",
+              "cssClass": "photo-dfu2-granulation"
+            }
+          ],
+          "treatment": "Continued advanced dressings",
+          "observations": "Healthy granulation tissue, minimal exudate"
+        },
+        {
+          "stage": 5,
+          "week": 16,
+          "label": "Week 16",
+          "type": "after",
+          "images": [
+            {
+              "path": "images/wounds/5.jpg",
+              "alt": "Closed ulcer",
+              "caption": "Week 16: Skin intact with protective scar and continued offloading plan.",
+              "cssClass": "photo-dfu2-healed"
+            }
+          ],
+          "treatment": "Completed therapy with ongoing offloading",
+          "observations": "Skin intact with protective scar"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-12-07",
+    "totalCases": 3,
+    "notes": "All patient photos used with written consent. Images are for educational purposes demonstrating wound healing progression."
+  }
+}
