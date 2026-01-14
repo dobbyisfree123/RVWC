@@ -278,12 +278,158 @@
           "observations": "Skin intact with protective scar"
         }
       ]
+    },
+    {
+      "id": "surgical-toe-amputation-1",
+      "category": "Surgical Wound",
+      "title": "First toe amputation with NPWT and offloading",
+      "description": "A first toe amputation site progressed with negative pressure therapy and strict offloading. Serial images show granulation, contraction, and final epithelialization.",
+      "patientConsent": true,
+      "patientConditions": [
+        "Diabetes",
+        "Peripheral arterial disease"
+      ],
+      "duration": {
+        "weeks": 12,
+        "startDate": null,
+        "endDate": null
+      },
+      "timeline": [
+        {
+          "stage": 1,
+          "week": 0,
+          "label": "Surg 1",
+          "type": "before",
+          "images": [
+            {
+              "path": "images/wounds/Surg 1.jpg",
+              "alt": "Immediate post amputation",
+              "caption": "Surg 1: Immediate post-operative first toe amputation site.",
+              "cssClass": "photo-surg1-postop"
+            }
+          ],
+          "treatment": "Post-operative assessment",
+          "observations": "Fresh surgical site with exposed wound bed"
+        },
+        {
+          "stage": 2,
+          "week": 1,
+          "label": "Surg 2",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/surg 2.jpg",
+              "alt": "Early wound assessment",
+              "caption": "Surg 2: Early assessment prior to initiating negative pressure therapy.",
+              "cssClass": "photo-surg1-assessment"
+            }
+          ],
+          "treatment": "Wound cleansing and edema control",
+          "observations": "Moderate drainage with early granulation"
+        },
+        {
+          "stage": 3,
+          "week": 2,
+          "label": "Surg 3",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/surg 3.jpg",
+              "alt": "Negative pressure dressing placement",
+              "caption": "Surg 3: Negative pressure therapy applied to stimulate granulation.",
+              "cssClass": "photo-surg1-npwt"
+            }
+          ],
+          "treatment": "Negative pressure wound therapy (NPWT)",
+          "observations": "Granulation tissue developing with reduced edema"
+        },
+        {
+          "stage": 4,
+          "week": 4,
+          "label": "Surg 4",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/Surg 4.jpg",
+              "alt": "Granulation progress",
+              "caption": "Surg 4: NPWT and offloading reduced depth and drainage.",
+              "cssClass": "photo-surg1-granulation"
+            }
+          ],
+          "treatment": "Continued NPWT with strict offloading",
+          "observations": "Granulation progressing, depth decreasing"
+        },
+        {
+          "stage": 5,
+          "week": 6,
+          "label": "Surg 5",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/Surg 5.jpg",
+              "alt": "Transition to advanced dressings",
+              "caption": "Surg 5: Transitioned to advanced dressings as the wound contracted.",
+              "cssClass": "photo-surg1-dressings"
+            }
+          ],
+          "treatment": "Advanced dressings with offloading",
+          "observations": "Wound contraction with minimal exudate"
+        },
+        {
+          "stage": 6,
+          "week": 8,
+          "label": "Surg 6",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/Surg 6.jpg",
+              "alt": "Near closure",
+              "caption": "Surg 6: Continued offloading supported epithelial migration.",
+              "cssClass": "photo-surg1-epithelial"
+            }
+          ],
+          "treatment": "Moisture-balancing dressings",
+          "observations": "Epithelial migration evident at wound edges"
+        },
+        {
+          "stage": 7,
+          "week": 10,
+          "label": "Surg 7",
+          "type": "during",
+          "images": [
+            {
+              "path": "images/wounds/Surg 7.jpg",
+              "alt": "Minimal residual defect",
+              "caption": "Surg 7: Small residual defect with healthy pink tissue.",
+              "cssClass": "photo-surg1-near-healed"
+            }
+          ],
+          "treatment": "Protective dressings and offloading",
+          "observations": "Minimal residual defect with healthy tissue"
+        },
+        {
+          "stage": 8,
+          "week": 12,
+          "label": "Surg 8",
+          "type": "after",
+          "images": [
+            {
+              "path": "images/wounds/Surg 8.jpg",
+              "alt": "Healed amputation site",
+              "caption": "Surg 8: Fully epithelialized amputation site with durable skin.",
+              "cssClass": "photo-surg1-healed"
+            }
+          ],
+          "treatment": "Completed therapy",
+          "observations": "Healed amputation site with durable skin"
+        }
+      ]
     }
   ],
   "metadata": {
     "version": "1.0",
-    "lastUpdated": "2025-12-07",
-    "totalCases": 3,
+    "lastUpdated": "2025-12-08",
+    "totalCases": 4,
     "notes": "All patient photos used with written consent. Images are for educational purposes demonstrating wound healing progression."
   }
 }
