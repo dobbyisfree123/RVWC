@@ -11,12 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     nodes.forEach((node) => {
-      node.nodeValue = node.nodeValue.replace(/\(479\)\s*401-2609/g, '(479) 646-0881');
+      node.nodeValue = node.nodeValue
+        .replace(/\(479\)\s*401-2609/g, '479-546-0881')
+        .replace(/\(479\)\s*646-0881/g, '479-546-0881');
     });
 
-    root.querySelectorAll('a[href="tel:+14794012609"], a[href="tel:14794012609"]').forEach((link) => {
-      link.setAttribute('href', 'tel:+14796460881');
-    });
+    root
+      .querySelectorAll(
+        'a[href="tel:+14794012609"], a[href="tel:14794012609"], a[href="tel:+14796460881"], a[href="tel:14796460881"]'
+      )
+      .forEach((link) => {
+        link.setAttribute('href', 'tel:+14795460881');
+      });
   };
 
   updateFaxNumber(document.body);
