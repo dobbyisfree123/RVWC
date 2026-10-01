@@ -1168,3 +1168,7 @@ header:not(.navigation-ready) .menu-toggle { display: none; }
 @media (max-width: 360px) {
   .before-after-page .ba-card .ba-frame { grid-template-columns: 1fr; }
 }
+
+.before-after-page .ba-photo--unlabeled::after { display: none; }
+.before-after-page .ba-dated-photo { margin: 0; min-width: 0; }
+.before-after-page .ba-dated-photo figcaption { padding: 10px 2px 0; color: var(--text); font-weight: 600; font-size: 1rem; line-height: 1.5; }
