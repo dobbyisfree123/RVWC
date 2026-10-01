@@ -424,12 +424,53 @@
           "observations": "Healed amputation site with durable skin"
         }
       ]
+    },
+    {
+      "id": "left-heel-diabetic-foot-ulcer-2026",
+      "category": "Diabetic Foot Ulcer",
+      "title": "Healing after unsuccessful graft placement",
+      "description": "Following unsuccessful artificial graft placement, a left heel diabetic foot ulcer healed with serial office treatments, including weekly sharp debridement, compression dressings, and total contact casting.",
+      "patientConsent": true,
+      "patientConditions": [
+        "Diabetes"
+      ],
+      "duration": {
+        "startDate": "2026-06-01",
+        "endDate": "2026-09-30",
+        "days": 121
+      },
+      "timeline": [
+        {
+          "stage": 1,
+          "label": "Before \u00b7 June 1, 2026",
+          "type": "before",
+          "images": [
+            {
+              "path": "images/wounds/left-heel-dfu-before-2026-06-01.webp",
+              "alt": "Left heel diabetic foot ulcer before serial office treatment, June 1, 2026"
+            }
+          ]
+        },
+        {
+          "stage": 2,
+          "label": "Healed \u00b7 September 30, 2026",
+          "type": "after",
+          "images": [
+            {
+              "path": "images/wounds/left-heel-dfu-after-2026-09-30.webp",
+              "alt": "Healed left heel diabetic foot ulcer, September 30, 2026"
+            }
+          ],
+          "treatment": "Weekly sharp debridement, compression dressings, and total contact casting",
+          "observations": "Healed."
+        }
+      ]
     }
   ],
   "metadata": {
     "version": "1.0",
-    "lastUpdated": "2025-12-08",
-    "totalCases": 4,
+    "lastUpdated": "2026-10-01",
+    "totalCases": 5,
     "notes": "All patient photos used with written consent. Images are for educational purposes demonstrating wound healing progression."
   }
 }
