@@ -1136,3 +1136,35 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
   .ba-hero { padding: 20px; }
   .ba-journey, .ba-cta__panel { padding: 18px; }
 }
+
+/* Accessible navigation and progressive enhancement. */
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px 18px; background: white; color: var(--accent-strong); border: 2px solid var(--accent-strong); border-radius: 10px; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 4px; }
+nav a[aria-current="page"] { color: var(--accent-strong); background: var(--surface-soft); box-shadow: inset 0 0 0 1px var(--border); }
+header:not(.navigation-ready) nav { display: flex; }
+header:not(.navigation-ready) .menu-toggle { display: none; }
+
+/* Before-and-after cases read as complete sections, not narrow columns. */
+.before-after-page .ba-case-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
+.before-after-page .ba-card { display: block; min-width: 0; padding: 28px; }
+.before-after-page .ba-card__header { display: block; position: static; top: auto; min-height: 0; padding: 0; margin: 0 0 20px; border: 0; border-radius: 0; background: transparent; box-shadow: none; z-index: auto; }
+.before-after-page .ba-card__header .eyebrow { margin-bottom: 6px; }
+.before-after-page .ba-card__header h3 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 10px; }
+.before-after-page .ba-card__header p { max-width: 85ch; }
+.before-after-page .ba-card .ba-frame { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; border: 0; background: transparent; gap: 16px; }
+.before-after-page .ba-card .ba-photo { min-width: 0; min-height: 0; aspect-ratio: 4 / 3; box-shadow: none; border: 1px solid var(--border); background: #f2f5f9; }
+.before-after-page .ba-photo img { object-fit: contain; }
+.before-after-page .ba-checklist { margin-top: 20px; font-size: 1rem; }
+.before-after-page .ba-hero__highlights { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.before-after-page .stat-chip { display: block; min-width: 0; padding: 12px 16px; box-shadow: none; }
+.before-after-page .ba-highlight-text { color: var(--text); font-size: 1rem; font-weight: 600; line-height: 1.5; }
+@media (max-width: 640px) {
+  .before-after-page .ba-card { padding: 18px; }
+  .before-after-page .ba-card .ba-frame { gap: 10px; }
+  .before-after-page .ba-card__header h3 { font-size: 1.25rem; }
+  .before-after-page .ba-photo::after { top: 6px; left: 6px; padding: 4px 7px; font-size: 0.75rem; }
+}
+@media (max-width: 360px) {
+  .before-after-page .ba-card .ba-frame { grid-template-columns: 1fr; }
+}

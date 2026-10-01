@@ -1,61 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const headerContainer = document.getElementById('site-header');
-  const updateFaxNumber = (root) => {
-    if (!root) return;
-
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    const nodes = [];
-
-    while (walker.nextNode()) {
-      nodes.push(walker.currentNode);
-    }
-
-    nodes.forEach((node) => {
-      node.nodeValue = node.nodeValue
-        .replace(/479-546-0881/g, '(479)401-2609')
-        .replace(/\(479\)\s*646-0881/g, '(479)401-2609');
-    });
-
-    root
-      .querySelectorAll(
-        'a[href="tel:+14795460881"], a[href="tel:14795460881"], a[href="tel:+14796460881"], a[href="tel:14796460881"]'
-      )
-      .forEach((link) => {
-        link.setAttribute('href', 'tel:+14794012609');
-      });
+document.addEventListener('DOMContentLoaded', async () => {
+  const container = document.getElementById('site-header');
+  if (!container) return;
+  // The embedded header remains usable when fetching the shared header fails.
+  try {
+    const response = await fetch('components/navigation.html');
+    if (!response.ok) throw new Error(`Navigation request failed: ${response.status}`);
+    const markup = await response.text();
+    const template = document.createElement('template');
+    template.innerHTML = markup;
+    if (!template.content.querySelector('header nav')) throw new Error('Invalid navigation markup');
+    container.replaceChildren(template.content.cloneNode(true));
+  } catch (error) {
+    console.warn('Using fallback navigation.', error);
+  }
+  const header = container.querySelector('header');
+  const toggle = container.querySelector('.menu-toggle');
+  const nav = container.querySelector('nav');
+  if (!header || !toggle || !nav) return;
+  header.classList.add('navigation-ready');
+  const current = location.pathname.split('/').pop() || 'index.html';
+  nav.querySelectorAll('a').forEach(link => {
+    if (link.getAttribute('href') === current) link.setAttribute('aria-current', 'page');
+  });
+  const closeMenu = () => {
+    header.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
   };
-
-  updateFaxNumber(document.body);
-
-  if (!headerContainer) return;
-
-  fetch('components/navigation.html')
-    .then((response) => response.text())
-    .then((markup) => {
-      headerContainer.innerHTML = markup;
-      updateFaxNumber(headerContainer);
-
-      const header = headerContainer.querySelector('header');
-      const toggleButton = headerContainer.querySelector('.menu-toggle');
-      const nav = headerContainer.querySelector('nav');
-
-      if (!header || !toggleButton || !nav) return;
-
-      const closeMenu = () => {
-        header.classList.remove('nav-open');
-        toggleButton.setAttribute('aria-expanded', 'false');
-      };
-
-      toggleButton.addEventListener('click', () => {
-        const isOpen = header.classList.toggle('nav-open');
-        toggleButton.setAttribute('aria-expanded', String(isOpen));
-      });
-
-      nav.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', closeMenu);
-      });
-    })
-    .catch((error) => {
-      console.error('Unable to load navigation.', error);
-    });
+  toggle.addEventListener('click', () => {
+    toggle.setAttribute('aria-expanded', String(header.classList.toggle('nav-open')));
+  });
+  nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+  document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
+  header.addEventListener('focusout', () => {
+    setTimeout(() => { if (!header.contains(document.activeElement)) closeMenu(); }, 0);
+  });
 });
