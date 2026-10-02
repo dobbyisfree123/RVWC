@@ -1172,3 +1172,14 @@ header:not(.navigation-ready) .menu-toggle { display: none; }
 .before-after-page .ba-photo--unlabeled::after { display: none; }
 .before-after-page .ba-dated-photo { margin: 0; min-width: 0; }
 .before-after-page .ba-dated-photo figcaption { padding: 10px 2px 0; color: var(--text); font-weight: 600; font-size: 1rem; line-height: 1.5; }
+
+/* Review choices alongside Contact. */
+#site-header .review-dropdown { position: relative; }
+#site-header .review-toggle { display: flex; align-items: center; gap: 7px; padding: 9px 16px; border: 1px solid var(--accent-strong); border-radius: var(--radius-pill); background: var(--surface); color: var(--accent-strong); font-weight: 600; cursor: pointer; list-style: none; }
+#site-header .review-toggle::-webkit-details-marker { display: none; }
+#site-header .review-dropdown[open] .review-toggle { background: var(--surface-soft); }
+#site-header .review-options { position: absolute; right: 0; top: calc(100% + 10px); width: 220px; max-width: calc(100vw - 60px); z-index: 40; padding: 8px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); box-shadow: var(--shadow-soft); }
+#site-header .review-options a { display: block; padding: 12px; color: var(--accent-strong); font-weight: 600; border-radius: 8px; }
+@media (max-width: 640px) {
+  #site-header .review-options { right: auto; left: 0; }
+}

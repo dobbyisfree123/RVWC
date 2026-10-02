@@ -22,7 +22,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   nav.querySelectorAll('a').forEach(link => {
     if (link.getAttribute('href') === current) link.setAttribute('aria-current', 'page');
   });
+  const reviewDropdown = container.querySelector('.review-dropdown');
+  const closeReview = () => { if (reviewDropdown) reviewDropdown.open = false; };
+  document.addEventListener('click', event => {
+    if (reviewDropdown && !reviewDropdown.contains(event.target)) closeReview();
+  });
   const closeMenu = () => {
+    closeReview();
     header.classList.remove('nav-open');
     toggle.setAttribute('aria-expanded', 'false');
   };
@@ -31,6 +37,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
   document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && reviewDropdown?.open) {
+      closeReview();
+      reviewDropdown.querySelector('summary').focus();
+      return;
+    }
     if (event.key === 'Escape' && header.classList.contains('nav-open')) {
       closeMenu();
       toggle.focus();
